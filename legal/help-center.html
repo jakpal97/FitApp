@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centrum Pomocy - FitCoach</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #000;
+            border-bottom: 3px solid #000;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #000;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+        .faq-item {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            border-left: 4px solid #000;
+        }
+        .faq-question {
+            font-weight: 600;
+            font-size: 18px;
+            color: #000;
+            margin-bottom: 10px;
+        }
+        .faq-answer {
+            color: #555;
+            line-height: 1.8;
+        }
+        .category {
+            display: inline-block;
+            background: #000;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        .category.trainer {
+            background: #3b82f6;
+        }
+        .category.client {
+            background: #10b981;
+        }
+        .category.general {
+            background: #6b7280;
+        }
+        .contact-box {
+            background: #f0f9ff;
+            border: 2px solid #3b82f6;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+        .contact-box h3 {
+            margin-top: 0;
+            color: #3b82f6;
+        }
+        .contact-link {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        code {
+            background: #f3f4f6;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏋️ Centrum Pomocy FitCoach</h1>
+        <p style="font-size: 16px; color: #666; margin-bottom: 40px;">
+            Znajdź odpowiedzi na najczęściej zadawane pytania dotyczące korzystania z aplikacji FitCoach.
+        </p>
+
+        <h2>📱 Podstawy</h2>
+
+        <div class="faq-item">
+            <span class="category general">Ogólne</span>
+            <div class="faq-question">Czym jest FitCoach?</div>
+            <div class="faq-answer">
+                FitCoach to profesjonalna aplikacja mobilna łącząca trenerów personalnych z ich klientami. 
+                Umożliwia tworzenie planów treningowych, śledzenie postępów, komunikację w czasie rzeczywistym 
+                oraz zarządzanie danymi klientów w jednym miejscu.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <span class="category general">Ogólne</span>
+            <div class="faq-question">Jak założyć konto?</div>
+            <div class="faq-answer">
+                Przy pierwszym uruchomieniu aplikacji wybierz "Zarejestruj się". Podaj swój email, 
+                hasło i podstawowe dane. Następnie wybierz swoją rolę (Trener lub Klient) i wypełnij 
+                krótki formularz onboardingowy.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <span class="category general">Ogólne</span>
+            <div class="faq-question">Czy aplikacja jest darmowa?</div>
+            <div class="faq-answer">
+                Tak, obecnie FitCoach jest w pełni darmowy dla wszystkich użytkowników. 
+                Trenerzy mogą dodawać nieograniczoną liczbę klientów i tworzyć plany treningowe 
+                bez żadnych opłat.
+            </div>
+        </div>
+
+        <h2>💪 Dla Trenerów</h2>
+
+        <div class="faq-item">
+            <span class="category trainer">Trener</span>
+            <div class="faq-question">Jak dodać nowego klienta?</div>
+            <div class="faq-answer">
+                Przejdź do zakładki "Klienci" → kliknij przycisk "+" w prawym górnym rogu → 
+                wpisz email klienta → wyślij zaproszenie. Klient otrzyma możliwość dołączenia 
+                do Twojej listy po zalogowaniu się do aplikacji.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <span class="category trainer">Trener</span>
+            <div class="faq-question">Jak stworzyć plan treningowy?</div>
+            <div class="faq-answer">
+                <ol>
+                    <li>Wybierz klienta z listy</li>
+                    <li>Kliknij "Nowy plan" lub przejdź do zakładki "Plany"</li>
+                    <li>Wybierz zakres tygodnia (poniedziałek-niedziela)</li>
+                    <li>Dla każdego dnia dodaj ćwiczenia z biblioteki</li>
+                    <li>Ustaw serie, powtórzenia, RPE i czas odpoczynku</li>
+                    <li>Dodaj opcjonalne notatki i zapisz plan</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <span class="category trainer">Trener</span>
+            <div class="faq-question">Jak dodać własne ćwiczenie z filmem?</div>
+            <div class="faq-answer">
+                Przejdź do zakładki "Ćwiczenia" → "+" → wypełnij nazwę, kategorię, 
+                grupy mięśniowe → kliknij "Dodaj film" → nagraj lub wybierz film z galerii. 
+                <strong>Ważne:</strong> Filmy muszą być w formacie MP4, MOV lub M4V.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <span class="category trainer">Trener</span>
+            <div class="faq-question">Co oznacza RPE w planach treningowych?</div>
+            <div class="faq-answer">
+                RPE (Rate of Perceived Exertion) to skala oceny wysiłku od 0 do 10, 
+                gdzie 0 = brak wysiłku, a 10 = maksymalny wysiłek. Zastąpiła pole "Kg", 
+                aby umożliwić bardziej elastyczne programowanie treningów (np. dla ćwiczeń 
+                z ciężarem ciała, cardio, itp.).
+            </div>
+        </div>
+
+        <h2>🎯 Dla Klientów</h2>
+
+        <div class="faq-item">
+            <span class="category client">Klient</span>
+            <div class="faq-question">Jak dołączyć do trenera?</div>
+            <div class="faq-answer">
+                Twój trener musi wysłać Ci zaproszenie przez email. Po zalogowaniu się do 
+                aplikacji zaproszenie zostanie automatycznie aktywowane i zostaniesz przypisany 
+                do trenera.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <span class="category client">Klient</span>
+            <div class="faq-question">Gdzie znajdę swój plan treningowy?</div>
+            <div class="faq-answer">
+                Twój aktualny plan treningowy jest widoczny na ekranie głównym (Dashboard). 
+                Wybierz dzień tygodnia, aby zobaczyć ćwiczenia zaplanowane na dany dzień. 
+                Możesz również przejść do zakładki "Plany" aby zobaczyć historię wszystkich planów.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <span class="category client">Klient</span>
+            <div class="faq-question">Jak oznaczyć trening jako ukończony?</div>
+            <div class="faq-answer">
+                Podczas wykonywania treningu zaznaczaj checkbox przy każdym wykonanym ćwiczeniu. 
+                Po zakończeniu kliknij "Zakończ trening" → opcjonalnie dodaj notatki i 
+                ocenę samopoczucia → zapisz. Twój trener otrzyma powiadomienie o ukończeniu.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <span class="category client">Klient</span>
+            <div class="faq-question">Jak kontaktować się z trenerem?</div>
+            <div class="faq-answer">
+                Kliknij zakładkę "Chat" na dolnym pasku nawigacji lub przejdź do 
+                Ustawienia → "Napisz do trenera". Możesz wysyłać wiadomości tekstowe w czasie rzeczywistym.
+            </div>
+        </div>
+
+        <h2>📊 Pomiary i Postępy</h2>
+
+        <div class="faq-item">
+            <span class="category client">Klient</span>
+            <div class="faq-question">Jak dodać pomiar wagi i obwodów?</div>
+            <div class="faq-answer">
+                Przejdź do zakładki "Postępy" → "+" → wybierz datę pomiaru → 
+                wprowadź wagę i opcjonalnie obwody ciała (talia, klatka, ramię, udo) → 
+                możesz dodać zdjęcia postępu (przód, bok, tył) → zapisz. 
+                Dane będą widoczne na wykresach.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <span class="category trainer">Trener</span>
+            <div class="faq-question">Jak śledzić postępy klientów?</div>
+            <div class="faq-answer">
+                Kliknij na klienta z listy → wybierz zakładkę "Postępy". Zobaczysz wykresy 
+                wagi, zdjęcia postępu oraz historię pomiarów. Możesz również zobaczyć 
+                statystyki ukończonych treningów na Dashboardzie.
+            </div>
+        </div>
+
+        <h2>🔔 Powiadomienia</h2>
+
+        <div class="faq-item">
+            <span class="category general">Ogólne</span>
+            <div class="faq-question">Dlaczego nie otrzymuję powiadomień push?</div>
+            <div class="faq-answer">
+                Sprawdź:
+                <ul>
+                    <li>Czy powiadomienia są włączone w Ustawieniach aplikacji</li>
+                    <li>Czy powiadomienia są włączone w ustawieniach systemowych urządzenia (iOS/Android)</li>
+                    <li>Czy masz stabilne połączenie internetowe</li>
+                    <li><strong>Ważne:</strong> Powiadomienia push działają tylko w wersji produkcyjnej 
+                    (ze sklepu), nie w Expo Go</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <span class="category general">Ogólne</span>
+            <div class="faq-question">Jakie rodzaje powiadomień otrzymam?</div>
+            <div class="faq-answer">
+                <strong>Klienci:</strong>
+                <ul>
+                    <li>Nowe plany treningowe</li>
+                    <li>Przypomnienia o treningu</li>
+                    <li>Nowe wiadomości od trenera</li>
+                </ul>
+                <strong>Trenerzy:</strong>
+                <ul>
+                    <li>Ukończone treningi przez klientów</li>
+                    <li>Nowe wiadomości od klientów</li>
+                    <li>Nowi klienci</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>🔒 Bezpieczeństwo i Prywatność</h2>
+
+        <div class="faq-item">
+            <span class="category general">Ogólne</span>
+            <div class="faq-question">Czy moje dane są bezpieczne?</div>
+            <div class="faq-answer">
+                Tak. Wszystkie dane są przechowywane na bezpiecznych serwerach w Unii Europejskiej 
+                zgodnie z RODO. Komunikacja jest szyfrowana (SSL/TLS), hasła są hashowane, 
+                a dostęp do danych jest kontrolowany przez polityki Row Level Security (RLS).
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <span class="category general">Ogólne</span>
+            <div class="faq-question">Jak zmienić hasło?</div>
+            <div class="faq-answer">
+                Przejdź do Ustawień → "Zmień hasło" → wprowadź nowe hasło (minimum 6 znaków) → 
+                potwierdź → zapisz. Zalecamy używanie silnych haseł zawierających litery, cyfry 
+                i znaki specjalne.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <span class="category general">Ogólne</span>
+            <div class="faq-question">Jak usunąć konto?</div>
+            <div class="faq-answer">
+                Przejdź do Ustawień → przewiń na dół → "Usuń konto" → potwierdź decyzję. 
+                <strong>Uwaga:</strong> To działanie jest nieodwracalne. Wszystkie dane zostaną 
+                trwale usunięte w ciągu 30 dni. Trenerzy: usunięcie konta usuwa także wszystkich 
+                klientów, plany i ćwiczenia.
+            </div>
+        </div>
+
+        <h2>🐛 Problemy Techniczne</h2>
+
+        <div class="faq-item">
+            <span class="category general">Ogólne</span>
+            <div class="faq-question">Film ćwiczenia nie ładuje się</div>
+            <div class="faq-answer">
+                <ol>
+                    <li>Sprawdź połączenie internetowe (filmy wymagają stabilnego połączenia)</li>
+                    <li>Spróbuj zamknąć i otworzyć aplikację ponownie</li>
+                    <li>Upewnij się, że film został poprawnie przesłany (trener powinien zobaczyć miniaturkę)</li>
+                    <li>Jeśli problem się powtarza, skontaktuj się z supportem</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <span class="category general">Ogólne</span>
+            <div class="faq-question">Aplikacja się zawiesza/crashuje</div>
+            <div class="faq-answer">
+                Rozwiązania:
+                <ul>
+                    <li>Zamknij i uruchom aplikację ponownie</li>
+                    <li>Sprawdź, czy masz najnowszą wersję aplikacji w sklepie</li>
+                    <li>Wyczyść cache aplikacji (Ustawienia systemowe)</li>
+                    <li>Zrestartuj urządzenie</li>
+                    <li>Jeśli problem się utrzymuje, napisz do nas z opisem problemu</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <span class="category general">Ogólne</span>
+            <div class="faq-question">Nie widzę nowego planu treningowego</div>
+            <div class="faq-answer">
+                <strong>Klient:</strong> Spróbuj przeciągnąć ekran w dół (pull to refresh) 
+                aby odświeżyć dane. Sprawdź, czy zakres dat planu obejmuje obecny tydzień.
+                <br><br>
+                <strong>Trener:</strong> Upewnij się, że plan został zapisany (zobacz w zakładce "Plany"). 
+                Sprawdź, czy plan jest aktywny (is_active = true).
+            </div>
+        </div>
+
+        <h2>📞 Kontakt z Supportem</h2>
+
+        <div class="contact-box">
+            <h3>Nie znalazłeś odpowiedzi?</h3>
+            <p>
+                Skontaktuj się z naszym zespołem wsparcia:
+            </p>
+            <p>
+                <strong>Email:</strong> <a href="mailto:support@fitcoach.app" class="contact-link">support@fitcoach.app</a><br>
+                <strong>Czas odpowiedzi:</strong> 24-48 godzin (dni robocze)
+            </p>
+            <p style="margin-top: 15px; font-size: 14px; color: #666;">
+                💡 <strong>Tip:</strong> Przed napisaniem do supportu, przygotuj:
+            </p>
+            <ul style="font-size: 14px; color: #666;">
+                <li>Opis problemu i kroki do odtworzenia</li>
+                <li>Model urządzenia i wersję systemu (iOS/Android)</li>
+                <li>Wersję aplikacji (znajdziesz w Ustawieniach)</li>
+                <li>Screenshoty (jeśli dotyczy)</li>
+            </ul>
+        </div>
+
+        <div style="margin-top: 40px; padding: 20px; background: #f9f9f9; border-radius: 8px; text-align: center;">
+            <p style="margin: 0; color: #666;">
+                <strong>FitCoach</strong> - Razem osiągniemy więcej 💪
+            </p>
+            <p style="margin: 10px 0 0 0; font-size: 14px; color: #999;">
+                Wersja dokumentacji: 1.0 | Ostatnia aktualizacja: 18 lutego 2026
+            </p>
+        </div>
+    </div>
+</body>
+</html>
